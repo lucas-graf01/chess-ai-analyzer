@@ -8,9 +8,7 @@ from annotator import classify_move, detect_missed_chance, build_comment
 
 
 def moves_to_san_list(board: chess.Board, moves: list[chess.Move], max_len: int = 8) -> list[str]:
-    """
-    Convert a list of engine moves into SAN notation from the given starting board.
-    """
+    
     temp_board = board.copy()
     san_moves = []
 
@@ -25,9 +23,7 @@ def moves_to_san_list(board: chess.Board, moves: list[chess.Move], max_len: int 
 
 
 def analyze_pgn(pgn_text: str, engine: EngineService) -> list[MoveAnalysis]:
-    """
-    Analyze a PGN game move by move and return a list of MoveAnalysis objects.
-    """
+    
     game = chess.pgn.read_game(io.StringIO(pgn_text))
     if game is None:
         raise ValueError("Invalid PGN.")
