@@ -1,12 +1,5 @@
 def classify_move(cp_loss, eval_before=None, eval_after=None):
-    """
-    Classifies a move based on centipawn loss.
-
-    cp_loss interpretation:
-    - small cp_loss  -> good / normal move
-    - medium cp_loss -> inaccuracy / mistake
-    - large cp_loss  -> blunder
-    """
+   
 
     if cp_loss is None:
         return "", "normal"
@@ -24,11 +17,7 @@ def classify_move(cp_loss, eval_before=None, eval_after=None):
 
 
 def detect_missed_chance(eval_before, cp_loss):
-    """
-    Detect a missed chance:
-    if the player had a clearly favorable position and gives away
-    a noticeable chunk of the advantage.
-    """
+   
     if eval_before is None or cp_loss is None:
         return False
 
@@ -40,10 +29,7 @@ def side_label(side):
 
 
 def build_comment(move):
-    """
-    Builds a natural-language comment for the move.
-    Expects a MoveAnalysis object.
-    """
+  
     player = side_label(move.side)
     san_text = move.san if move.side == "white" else f"...{move.san}"
 
