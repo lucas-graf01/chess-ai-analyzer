@@ -2,11 +2,11 @@
 
 ## Übersicht
 
-Chess AI Analyzer ist eine lokale Schachanalyse-Anwendung, die klassische Schachengines mit modernen Sprachmodellen kombiniert.
+Chess AI Analyzer ist eine lokale Schachanalyse Anwendung, welche klassische Schachengines mit modernen Sprachmodellen kombiniert.
 
-Die Software analysiert PGN-Partien Zug für Zug mithilfe von Stockfish, erkennt kritische Momente wie Ungenauigkeiten, Fehler oder Blunder und generiert zusätzlich verständliche natürliche Kommentare zu den wichtigsten Stellungen.
+Die Software analysiert PGN Partien Zug für Zug mithilfe von Stockfish, erkennt kritische Momente wie Ungenauigkeiten, Fehler oder Blunder und generiert zusätzlich verständliche natürliche Kommentare zu den wichtigsten Stellungen.
 
-Ziel des Projekts ist es, eine Analyseumgebung zu schaffen, die sowohl technisch präzise als auch für Menschen verständlich ist — ähnlich wie moderne Online-Schachplattformen, jedoch vollständig lokal und erweiterbar.
+Ziel des Projekts ist es, eine Analyseumgebung zu schaffen, die sowohl technisch präzise als auch für Menschen verständlich ist, ähnlich wie moderne Online-Schachplattformen, jedoch vollständig lokal und erweiterbar.
 
 
 # Hauptfunktionen
