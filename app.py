@@ -33,7 +33,7 @@ def board_from_fen(fen: str, size: int = 420):
 
 
 st.set_page_config(page_title="Chess Analyzer", layout="wide")
-st.title("♟️ Chess Analyzer")
+st.title("Chess Analyzer")
 
 if "analyses" not in st.session_state:
     st.session_state["analyses"] = None
